@@ -1,0 +1,6 @@
+<h2>Send a text message</h2>
+
+	<%= form_tag "/notifications" do | comp | %>
+		<%= text_field_tag(:q) %>
+		<%= submit_tag("Send SMS") %>
+	<% end %>
